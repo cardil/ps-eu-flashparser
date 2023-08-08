@@ -1,0 +1,8 @@
+{
+  "name": "ps-eu-flashparser",
+  "description": "Parser for PS.EU Flashcards",
+  "version": "0.1.0",
+  "devDependencies": {
+    "jsdom": "^22.1.0"
+  }
+}
