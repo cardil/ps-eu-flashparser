@@ -10,4 +10,5 @@ This script is to parse the content of the PS.eu flashcards into a JSON doc.
      https://patentstrzelecki.eu/fiszki/wszystkie
    ```
  - Run: `node parse.js`
-
+ - Use generated csv with https://github.com/Antosser/flashcards-printer
+ 

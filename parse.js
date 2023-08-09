@@ -24,3 +24,9 @@ cards = cards.map(card => {
 
 fs.writeFileSync(path.join(__dirname, 'tmp/ps-eu-flashcards.json'), JSON.stringify(cards, null, 2));
 console.log(`Saved ${cards.length} cards to tmp/ps-eu-flashcards.json`);
+
+fs.writeFileSync(path.join(__dirname, 'tmp/ps-eu-flashcards.csv'), 'Question|Answer');
+cards.forEach(card => {
+  fs.appendFileSync(path.join(__dirname, 'tmp/ps-eu-flashcards.csv'), `\n${card.question}|${card.answer}`);
+});
+console.log(`Saved ${cards.length} cards to tmp/ps-eu-flashcards.csv`);
