@@ -21,4 +21,6 @@ cards = cards.map(card => {
     question, answer, source
   };
 });
-console.log(cards);
+
+fs.writeFileSync(path.join(__dirname, 'tmp/ps-eu-flashcards.json'), JSON.stringify(cards, null, 2));
+console.log(`Saved ${cards.length} cards to tmp/ps-eu-flashcards.json`);
